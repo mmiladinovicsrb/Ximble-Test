@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ximble.BusinessEntities", "Ximble.BusinessEntities\Ximble.BusinessEntities.csproj", "{7BA7F610-9D0C-4D22-B01E-84B7C919C172}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ximble.BusinessServices", "Ximble.BusinessServices\Ximble.BusinessServices.csproj", "{7BB19B2A-7010-4FA5-A5B9-DE6C66357E42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ximble.DataModel", "Ximble.DataModel\Ximble.DataModel.csproj", "{0AAB2D5B-784F-4BE5-8FD5-546F272BED47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ximble.WebApi", "Ximble.WebApi\Ximble.WebApi.csproj", "{183B3D2D-5D2F-43D3-B171-D8CE8486CA83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ximble.WebApi.Tests", "Ximble.WebApi.Tests\Ximble.WebApi.Tests.csproj", "{9A5FC0C3-1350-4988-B446-BE8754EDAB54}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7BA7F610-9D0C-4D22-B01E-84B7C919C172}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BA7F610-9D0C-4D22-B01E-84B7C919C172}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BA7F610-9D0C-4D22-B01E-84B7C919C172}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BA7F610-9D0C-4D22-B01E-84B7C919C172}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BB19B2A-7010-4FA5-A5B9-DE6C66357E42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BB19B2A-7010-4FA5-A5B9-DE6C66357E42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BB19B2A-7010-4FA5-A5B9-DE6C66357E42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BB19B2A-7010-4FA5-A5B9-DE6C66357E42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AAB2D5B-784F-4BE5-8FD5-546F272BED47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AAB2D5B-784F-4BE5-8FD5-546F272BED47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AAB2D5B-784F-4BE5-8FD5-546F272BED47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AAB2D5B-784F-4BE5-8FD5-546F272BED47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{183B3D2D-5D2F-43D3-B171-D8CE8486CA83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{183B3D2D-5D2F-43D3-B171-D8CE8486CA83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{183B3D2D-5D2F-43D3-B171-D8CE8486CA83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{183B3D2D-5D2F-43D3-B171-D8CE8486CA83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A5FC0C3-1350-4988-B446-BE8754EDAB54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A5FC0C3-1350-4988-B446-BE8754EDAB54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A5FC0C3-1350-4988-B446-BE8754EDAB54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A5FC0C3-1350-4988-B446-BE8754EDAB54}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
