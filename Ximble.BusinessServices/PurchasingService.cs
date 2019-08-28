@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Ximble.BusinessServices.Interfaces;
 using Ximble.DataModel;
 
@@ -17,17 +15,16 @@ namespace Ximble.BusinessServices
             unitOfWork = new UnitOfWork();
         }
 
-        public int GetNumberOfSoldProduct(DateTime startDate, DateTime endDate)
+        public IEnumerable<object> GetNumberOfSoldUnits(DateTime startDate, DateTime endDate)
         {
-            var purchasingOrder = unitOfWork.PurchaseOrderDetailRepository.GetAll();
-            var count = purchasingOrder.Select(x => x.OrderQty).Count();
-            
-            return count;
+            // 
+            var purchasingOrder = unitOfWork.PurchaseOrderDetailRepository.GetAll().GroupBy(g => g.Product.Name).Select(p=> new { ProductName = p.Key, TotalSoldUnits = p.Count()});
+            return purchasingOrder;
         }
 
-        public decimal GetSumOfTraffic(DateTime startDate, DateTime endDate)
+        public IEnumerable<object> GetSumOfTraffic(DateTime startDate, DateTime endDate)
         {
-            var sumOfTraffic = unitOfWork.PurchaseOrderDetailRepository.GetAll().Sum(x => x.OrderQty);
+            var sumOfTraffic = unitOfWork.PurchaseOrderDetailRepository.GetAll().GroupBy(g => g.Product.Name).Select(p => new { ProductName = p.Key, LineOfTotal = p.Sum(item => item.LineTotal) }); 
             return sumOfTraffic;
         }
     }
