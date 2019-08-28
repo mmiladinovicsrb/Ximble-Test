@@ -24,7 +24,8 @@ namespace Ximble.WebApi.Controllers
         [Route("api/purchasing/get-sum")]
         public HttpResponseMessage GetSumOfTraffic([FromUri]PaginatedModel pagingModel)
         {
-            var lineTotal = _purchasingService.GetSumOfTraffic(DateTime.UtcNow, DateTime.UtcNow);
+            //TO DO - check which date parameters should be used  - [SellStartDate],[SellEndDate] ???
+        var lineTotal = _purchasingService.GetSumOfTraffic(DateTime.UtcNow, DateTime.UtcNow);
 
             if(pagingModel != null)
             {
@@ -65,6 +66,7 @@ namespace Ximble.WebApi.Controllers
         [Route("api/purchasing/get-num")]
         public HttpResponseMessage GetNumberOfSoldUnits([FromUri]PaginatedModel pagingModel)
         {
+            //TO DO - check which date parameters should be used  - [SellStartDate],[SellEndDate] ???
             var soldUnits = _purchasingService.GetNumberOfSoldUnits(DateTime.UtcNow, DateTime.UtcNow);
 
             if (pagingModel != null)
