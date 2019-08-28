@@ -3,9 +3,6 @@ using System.Diagnostics;
 
 namespace Ximble.DataModel
 {
-    /// <summary>
-    /// Unit of Work class responsible for DB transactions
-    /// </summary>
     public class UnitOfWork : IDisposable
     {
         private AdventureWorks2017Entities _context = null;
@@ -18,9 +15,6 @@ namespace Ximble.DataModel
             _context = new AdventureWorks2017Entities();
         }
 
-        /// <summary>
-        /// Get/Set Property for product repository.
-        /// </summary>
         public GenericRepository<Product> ProductRepository
         {
             get
@@ -34,9 +28,6 @@ namespace Ximble.DataModel
             }
         }
 
-        /// <summary>
-        /// Get/Set Property for user repository.
-        /// </summary>
         public GenericRepository<ProductDescription> ProductDescriptionRepository
         {
             get
@@ -50,9 +41,6 @@ namespace Ximble.DataModel
             }
         }
 
-        /// <summary>
-        /// Get/Set Property for token repository.
-        /// </summary>
         public GenericRepository<PurchaseOrderDetail> PurchaseOrderDetailRepository
         {
             get
@@ -68,10 +56,6 @@ namespace Ximble.DataModel
 
         private bool disposed = false; 
 
-        /// <summary>
-        /// Protected Virtual Dispose method
-        /// </summary>
-        /// <param name="disposing"></param>
         protected virtual void Dispose(bool disposing)
         {
             if (!this.disposed)
@@ -85,9 +69,6 @@ namespace Ximble.DataModel
             this.disposed = true;
         }
 
-        /// <summary>
-        /// Dispose method
-        /// </summary>
         public void Dispose()
         {
             Dispose(true);
